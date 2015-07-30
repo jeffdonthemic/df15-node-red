@@ -46,23 +46,23 @@ var settings = module.exports = {
     functionGlobalContext: { },
 }
 
-if (process.env.NODE_RED_USERNAME && process.env.NODE_RED_PASSWORD) {
-    settings.adminAuth = {
-        type: "credentials",
-        users: function(username) {
-            if (process.env.NODE_RED_USERNAME == username) {
-                return when.resolve({username:username,permissions:"*"});
-            } else {
-                return when.resolve(null);
-            }
-        },
-        authenticate: function(username, password) {
-            if (process.env.NODE_RED_USERNAME == username &&
-                process.env.NODE_RED_PASSWORD == password) {
-                return when.resolve({username:username,permissions:"*"});
-            } else {
-                return when.resolve(null);
-            }
-        }
-    }
-}
+// if (process.env.NODE_RED_USERNAME && process.env.NODE_RED_PASSWORD) {
+//     settings.adminAuth = {
+//         type: "credentials",
+//         users: function(username) {
+//             if (process.env.NODE_RED_USERNAME == username) {
+//                 return when.resolve({username:username,permissions:"*"});
+//             } else {
+//                 return when.resolve(null);
+//             }
+//         },
+//         authenticate: function(username, password) {
+//             if (process.env.NODE_RED_USERNAME == username &&
+//                 process.env.NODE_RED_PASSWORD == password) {
+//                 return when.resolve({username:username,permissions:"*"});
+//             } else {
+//                 return when.resolve(null);
+//             }
+//         }
+//     }
+// }
