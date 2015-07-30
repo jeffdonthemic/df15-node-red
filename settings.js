@@ -46,7 +46,7 @@ var settings = module.exports = {
     functionGlobalContext: { },
 }
 
-// if (process.env.NODE_RED_USERNAME && process.env.NODE_RED_PASSWORD) {
+// if (process.env.NODE_RED_USERNAME && process.env.NODE_RED_PASSWORD) { 
 //     settings.adminAuth = {
 //         type: "credentials",
 //         users: function(username) {
