@@ -1,0 +1,13 @@
+{
+    "name"         : "test",
+    "version"      : "0.0.1",
+    "dependencies": {},
+    "node-red"     : {
+        "nodes": {
+            "lower-case": "lower-case.js"
+        }
+    },    
+    "engines": {
+        "node": "0.10.x"
+    }
+}
