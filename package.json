@@ -7,6 +7,6 @@
         "node-red-contrib-salesforce": "git://github.com/jeffdonthemic/node-red-contrib-salesforce.git#issue1"
     },
     "engines": {
-        "node": "0.12.2"
+        "node": "0.12.2" 
     }
 }
