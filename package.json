@@ -5,7 +5,7 @@
         "node-red": "0.x",
         "when": "~3.x",
         "node-red-contrib-salesforce": "0.0.4",
-        "node-red-contrib-elasticsearch": "*"
+        "node-red-contrib-elasticsearch" : "git://github.com/jeffdonthemic/node-red-contrib-elasticsearch.git"
     },
     "engines": {
         "node": "0.12.2"
