@@ -17,7 +17,7 @@
   "dependencies": {
     "mongodb": "^2.0.39",
     "node-red": "0.x",
-    "node-red-contrib-elasticsearch-jd": "0.0.3",
+    "node-red-contrib-elasticsearch-jd": "0.0.4",
     "node-red-contrib-salesforce": "0.0.x",
     "when": "~3.x"
   }
