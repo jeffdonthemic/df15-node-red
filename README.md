@@ -1,17 +1,28 @@
-node-red-heroku
-================
+node-red-salesforce
+===================
 
-A wrapper for deploying [Node-RED](http://nodered.org) into the [Heroku](https://www.heroku.com).
+A [Node-RED](http://nodered.org) instance for Heroku with pre-installed Salesforce nodes.
 
-### Deploying Node-RED into Heroku 
+With the node-red-contrib-salesforce flows you can easily:
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/joeartsea/node-red-heroku)
+* Issue SOQL and SOSL queries
+* Perform DML statements (create, update, upsert and delete)
+* Parse the XML from a Salesforce Outbound Message to a JSON object
+* Create clients that subscribe to PushTopics for the Streaming API
 
-### Password protect the flow editor
+For more information, see the <a href="https://www.npmjs.com/package/node-red-contrib-salesforce">node-red-contrib-salesforce</a> package.
 
-By default, the editor is open for anyone to access and modify flows. To password-protect the editor:
+To add additional functionality, `git pull` the repo locally, use npm to install any packages you may want and the `git push` back to Heroku.
 
-Add the following user-defined variables.
+### Deploy to Heroku
 
-* NODE_RED_USERNAME - the username to secure the editor with
-* NODE_RED_PASSWORD - the password to secure the editor with
+Deploy this app to Heroku for free and have it up and running in a matter of minutes.
+
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/jeffdonthemic/node-red-salesforce)
+
+### Flow Editor Credentials
+
+The flow editor UI (/red) is password protected **if** you include the following environment variables:
+
+* NODE_RED_USERNAME
+* NODE_RED_PASSWORD

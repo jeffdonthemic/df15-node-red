@@ -1,3 +1,4 @@
-To add additional nodes, either:
- - drop them in this directory and add their dependencies to ../package.json
- - add their npm package name to ../package.json
+To add nodes you can either:
+
+* Add the npm package name in ../package.json
+* Drop the package contents in this directory and then add the dependency in ../package.json
